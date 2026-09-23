@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#060A14"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="VORIX" android:textSize="38sp" android:textColor="#00D4FF"
+        android:letterSpacing="0.2" android:gravity="center" android:textStyle="bold"/>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="Bluetooth Intelligence Scanner  •  للاستخدام القانوني فقط"
+        android:textColor="#6B7A90" android:textSize="12sp" android:gravity="center" android:layout_marginBottom="16dp"/>
+
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <EditText android:id="@+id/filterInput" android:layout_width="0dp" android:layout_weight="1" android:layout_height="48dp"
+            android:background="#0D1B2E" android:textColor="#FFFFFF" android:hintTextColor="#4A5C75"
+            android:hint="فلتر بالاسم (JBL, iPhone...) اتركه فارغ للكل" android:padding="12dp"/>
+        <Button android:id="@+id/btnScan" android:layout_width="wrap_content" android:layout_height="48dp"
+            android:text="بحث" android:backgroundTint="#00D4FF" android:textColor="#000000" android:layout_marginStart="8dp"/>
+    </LinearLayout>
+
+    <TextView android:id="@+id/tvStatus" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="جاهز - اضغط بحث" android:textColor="#00D4FF" android:textSize="12sp" android:layout_marginTop="12dp"/>
+
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="الأجهزة القريبة - اضغط على أي جهاز للتحليل العميق"
+        android:textColor="#5A6B85" android:textSize="11sp" android:layout_marginTop="12dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler"
+        android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"
+        android:layout_marginTop="8dp"/>
+
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="Vorix يكشف: الاسم • MAC • RSSI • نوع الجهاز • الخدمات • تقرير الحماية"
+        android:textColor="#1E3A5F" android:textSize="10sp" android:gravity="center" android:layout_marginTop="8dp"/>
+</LinearLayout>
